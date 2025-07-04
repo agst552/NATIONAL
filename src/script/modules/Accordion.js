@@ -1,7 +1,8 @@
 export default function initAccordion (){
     const accordionList = document.querySelectorAll("[data-accordion='accordion'] dt");
 
-    accordionList.forEach (itemDt = > {
+    accordionList.forEach (itemDt => {
+
         itemDt.addEventListener("mousemove", () => itemDt.style.cursor = "pointer");
         itemDt.addEventListener ("click", accordion);
     })
