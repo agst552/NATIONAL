@@ -1,0 +1,13 @@
+footer {
+    grid-column: 1/5;
+    background-color: var(---cor1);
+}
+
+footer p {
+    padding: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1rem;
+    color: var(---cor4);
+    font-weight: 500;
+    text-align: center;
+}
