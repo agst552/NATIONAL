@@ -41,8 +41,9 @@ section-two > h1{
     display: none;
 }
 
-[data-accordion = "accordion"] dt:ativo{
+[data-accordion = "accordion"] dd:ativo{
     display: block;
+    animation: anima-curiosedades .9s forwards;
 }
 
 [data-accordion = "accordion"] dt::after {
@@ -54,6 +55,8 @@ section-two > h1{
     content: "";
     margin-left: 10px;
 }
+
+
 
 /*Reponsividade*/
 @media(max-widht: 650px){
