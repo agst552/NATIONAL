@@ -34,7 +34,7 @@ ul{
 
 /*Cores Utilitarias*/
  :root {
-    ---cor1:#ffe680;
+    ---cor1: #ffe680;
     ---cor2: #e3d970;
     ---cor3: #fb5;
     ---cor4: #222;
@@ -63,10 +63,6 @@ ul{
     grid-template-columns: 90px 300px 1fr;
     gap: 20px;
     margin-bottom: 65px;
- }
-
- .section-three {
-    border: 2px solid red;
  }
 
  @media(max-width: 650px){
