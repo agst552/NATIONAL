@@ -1,0 +1,24 @@
+.drop-down-menu::before {
+    content: "A";
+    color:var(--cor6);
+    position: absolute;
+    margin-top: -13px;
+    margin-left: 10px;
+}
+
+
+
+.drop-down-menu li a{
+    text-decoration: none;
+    color: var(--cor4);
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    padding: 10px;
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px; */
+    letter-spacing: 1.5px;
+}
