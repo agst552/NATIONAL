@@ -12,12 +12,24 @@
         <!--Inico do cabeçalho-->
         <img src="src/assets/img/Logo.png" alt="">
         <header class="menu">
-            
             <nav>
-                <ul>
+                <!-- Início menu mobile -->
+                    <button class="button-mobile" data-menu="mobile">
+                <!-- Menu -->
+                    </button>
+                <!-- Fim menu mobile -->
+                <ul data-menu="list" id="menu">
                     <li><a href="#animais">animais</a></li>
                     <li><a href="#curiosidades">curiosidades</a></li>
-                    <li><a href="#">sobre</a></li>
+                    <li data-dropMenu="menuDrop">    
+                        <a href="#">sobre</a>
+                        <ul class="drop-down-menu">
+                            <li><a href="">Empresa</a></li>
+                            <li><a href="">Equipe</a></li>
+                            <li><a href="">Serviços</a></li>
+                            <li><a href="">Parceiros</a></li>
+                        </ul>
+                        </li>
                     <li><a href="#contatos">contato</a></li>
                     <li><a href="#">login ⮞</a></li>
                 </ul>
@@ -25,8 +37,9 @@
         </header>
         <!--Fim do cabeçalho-->
 
+        <!--inicio da primeira sessão-->
         <section class="section-one grid-section" id="animais">
-            <!--inicio da primeira sessão-->
+            
                 <h1 class="titulos">national geographic</h1>
                 <ul class="animais-list" data-tab="animais">
                     <li><img src="src/assets/img/raposa.jpg" alt="imagem de uma raposa"></li>
@@ -83,6 +96,32 @@
             </dl>
      </section>
 <!--Fim da Segunda sessão-->
+
+    <!-- Inicio Slider -->
+    <div class="box_slider grid-section">
+        <button class="preiew arrow">⯇</button>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="src/assets/img/foto1.jpg" alt=""></div>
+            <div class="slide"><img src="src/assets/img/foto2.jpg" alt=""></div>
+            <div class="slide"><img src="src/assets/img/foto3.jpg" alt=""></div>
+            <div class="slide"><img src="src/assets/img/foto4.jpg" alt=""></div>
+            <div class="slide"><img src="src/assets/img/foto5.jpg" alt=""></div>
+            <div class="slide"><img src="src/assets/img/foto6.jpg" alt=""></div>
+        </div>
+    </div>
+        <button class="next arrow">⯈</button>
+    </div>
+    <div class="dots grid-section">
+        <div class="dot ativo"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+      <!-- Fim slider -->
+
 
 <!--Inicio da Terceira sessão-->
      <section class="section-three grid-section" id="contato">
