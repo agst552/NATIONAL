@@ -1,0 +1,36 @@
+.modal {
+    /* display: none; */
+}
+
+.login-modal {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background-color: rgb(157, 209, 248);
+    width: 22rem;
+    height: 18rem;
+    border-radius: 10px;
+}
+
+.form-login {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.inpt-modal {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.label-modal {
+    text-align: right;
+    color: black;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+}
