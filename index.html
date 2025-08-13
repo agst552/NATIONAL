@@ -31,23 +31,7 @@
                         </ul>
                         </li>
                     <li><a href="#contatos">contato</a></li>
-                    <li><a href="#">login ⮞</a></li>
-                        <div class="modal">
-                            <button id="btn-x">X</button>
-                            <div class="login-modal">                      
-                                <div class="form-login">
-                                    <label class="label-modal" for="">Email:</label>
-                                    <input class="inpt-modal" type="email">
-                                </div>
-
-                                <div class="form-login">
-                                    <label class="label-modal" for="">Senha:</label>
-                                    <input class="inpt-modal" type="password">
-                                </div>
-                                <button>Entrar</button>
-                            </div>
-
-                        </div>
+                    <li><a href="#" data-modal= "abrirModal" >login ⮞</a></li>
                 </ul>
             </nav>
         </header>
@@ -157,6 +141,20 @@
         <p>Todos os direitos reservados.</p>
      </footer>
      <!-- Fim do rodapé -->
+
+     <div class="modal-container" >
+        <div class="modal">
+            <button class="fecha-modal" data-modal="fechaModal">X</button>
+            <form action="#">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite o seu email:">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Digite a sua senha:">
+            </form>
+            <button class="entar-login" >Entrar</button>
+        </div>
+     </div>
+
     </div>
 </body>
 </html>
