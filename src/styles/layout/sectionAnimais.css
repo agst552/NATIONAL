@@ -1,11 +1,9 @@
 
 .section-one > h1{
-    border: 2px solid yellow;
     grid-column: 1/4;
 }
 
 .animais-list{
-    border: 2px solid rgb(52, 165, 42);
     height: 400px;
     overflow-y:scroll;
     grid-column: 2;
@@ -44,8 +42,6 @@
     background-color: var(---cor3);
     margin-right: 10px;
     margin-bottom: 5px;
-
-
 }
 
 .animais-description p{
@@ -55,6 +51,40 @@
     line-height: 20px;
     margin-bottom: 15px;
 
+}
+
+
+/*Codificação de manipulação do JS*/
+[data-tab="description"] section {
+    display: none;
+}
+
+[data-tab="description"] section.ativo {
+    display: block;
+}
+
+/*Estilização do accordion*/
+
+
+/*Animação JS*/
+[data-tab="description"] section.ativo.anima-right {
+    animation: anima-right .9s forwards;
+}
+
+[data-accordion = "accordion"] dd {
+    display: none;
+}
+
+@keyframes anima-right {
+    from {
+        opacity: 0;
+        transform: translate3d(30px, 100px, 20px); /*Horizontal, vertical, controlar a movimentação 3d*/
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(30px,30px,0);
+    }
 }
 
 /* Responsividade */

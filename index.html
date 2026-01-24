@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>National Geographic</title>
     <link rel="stylesheet" href="src/styles/style.css">
+    <script type="module" src="src/script/script.js" defer></script>
 </head>
 <body>
     <div class="grid-container">
@@ -27,7 +28,7 @@
         <section class="section-one grid-section" id="animais">
             <!--inicio da primeira sessão-->
                 <h1 class="titulos">national geographic</h1>
-                <ul class="animais-list">
+                <ul class="animais-list" data-tab="animais">
                     <li><img src="src/assets/img/raposa.jpg" alt="imagem de uma raposa"></li>
                     <li><img src="src/assets/img/esquilo.jpg" alt="imagem de um esquilo"></li>
                     <li><img src="src/assets/img/urso.jpg" alt="imagem de um urso"></li>
@@ -35,28 +36,28 @@
                     <li><img src="src/assets/img/imagem5.jpg" alt="imagem de um babuíno"></li>
                     <li><img src="src/assets/img/leão.jpg" alt="imagem de um leão"></li>
                 </ul>
-                <div class="animais-description">
-                    <section>
+                <div class="animais-description" data-tab="description">
+                    <section data-anima="anima-right">
                         <h2>Raposa</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe temporibus aliquam nemo cupiditate pariatur architecto repellendus similique ea fugiat autem. Cumque molestiae est pariatur nemo, optio vero voluptate laborum excepturi eaque sequi, sint voluptatibus repudiandae ipsam labore aut tenetur esse quia exercitationem omnis quidem deleniti? Obcaecati consequuntur quisquam asperiores sequi.</p>
                     </section>
-                    <section>
+                    <section data-anima="anima-right">
                         <h2>Esquilo</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe temporibus aliquam nemo cupiditate pariatur architecto repellendus similique ea fugiat autem. Cumque molestiae est pariatur nemo, optio vero voluptate laborum excepturi eaque sequi, sint voluptatibus repudiandae ipsam labore aut tenetur esse quia exercitationem omnis quidem deleniti? Obcaecati consequuntur quisquam asperiores sequi.</p>
                     </section>
-                    <section>
+                    <section data-anima="anima-right">
                         <h2>Urso</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe temporibus aliquam nemo cupiditate pariatur architecto repellendus similique ea fugiat autem. Cumque molestiae est pariatur nemo, optio vero voluptate laborum excepturi eaque sequi, sint voluptatibus repudiandae ipsam labore aut tenetur esse quia exercitationem omnis quidem deleniti? Obcaecati consequuntur quisquam asperiores sequi.</p>
                     </section>
-                    <section>
+                    <section data-anima="anima-right">
                         <h2>Lobo</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe temporibus aliquam nemo cupiditate pariatur architecto repellendus similique ea fugiat autem. Cumque molestiae est pariatur nemo, optio vero voluptate laborum excepturi eaque sequi, sint voluptatibus repudiandae ipsam labore aut tenetur esse quia exercitationem omnis quidem deleniti? Obcaecati consequuntur quisquam asperiores sequi.</p>
                     </section>
-                    <section>
+                    <section data-anima="anima-right">
                         <h2>Babuino</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe temporibus aliquam nemo cupiditate pariatur architecto repellendus similique ea fugiat autem. Cumque molestiae est pariatur nemo, optio vero voluptate laborum excepturi eaque sequi, sint voluptatibus repudiandae ipsam labore aut tenetur esse quia exercitationem omnis quidem deleniti? Obcaecati consequuntur quisquam asperiores sequi.</p>
                     </section>
-                    <section>
+                    <section data-anima="anima-right">
                         <h2>Leão</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe temporibus aliquam nemo cupiditate pariatur architecto repellendus similique ea fugiat autem. Cumque molestiae est pariatur nemo, optio vero voluptate laborum excepturi eaque sequi, sint voluptatibus repudiandae ipsam labore aut tenetur esse quia exercitationem omnis quidem deleniti? Obcaecati consequuntur quisquam asperiores sequi.</p>
                     </section>
@@ -67,7 +68,7 @@
      <!--Inicio da Segunda sessão-->
      <section class="section-two grid-section" id="curiosidades">
         <h1 class="titulos">curiosidades</h1>
-            <dl class="list-curiosidades">
+            <dl class="list-curiosidades" data-accordion="accordion">
                 <dt>Qual a idade dos animais?</dt>
                 <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, eius? Aperiam aspernatur voluptates sapiente vitae, voluptatem inventore consequuntur perspiciatis deleniti excepturi omnis corporis. Qui culpa et nemo aut debitis quia.</dd>
 
